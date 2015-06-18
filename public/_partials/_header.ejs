@@ -1,9 +1,9 @@
 <header class="clearfix">
-	<h1 class="oml float-l"><a href="/">Kelly Hilliard</a></h1>
+	<h1 class="oml float-l"><a href="<%= site_url %>/index.html">Kelly Hilliard</a></h1>
 	<nav class="omr float-r">
 		<ul>
-			<li class="<%- current.source == 'work' ? 'active nav-li' : 'nav-li' %>"><a href="/work">Work</a></li>
-			<li class="<%- current.source == 'contact' ? 'active nav-li' : 'nav-li' %>"><a href="/contact">Contact</a></li>
+			<li class="<%- current.source == 'work' ? 'active nav-li' : 'nav-li' %>"><a href="<%= site_url %>/work.html">Work</a></li>
+			<li class="<%- current.source == 'contact' ? 'active nav-li' : 'nav-li' %>"><a href="<%= site_url %>/contact.html">Contact</a></li>
 		</ul>
 	</nav>
 </header>
