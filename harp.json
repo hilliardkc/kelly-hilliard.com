@@ -1,7 +1,7 @@
 {
 	"globals" : {
-		"title": "Kelly Hilliard's Website",
-		"description": "A place to learn a little about me.",
+		"title": "Kelly Hilliard - Front End Developer and Designer",
+		"description": "My personal portfolio website, sharing a little bit about me and my work. ",
 		"site_url": "http://localhost:9000"
 	},
 	"_comment" : {
