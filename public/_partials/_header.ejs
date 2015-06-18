@@ -1,9 +1,17 @@
 <header class="clearfix">
 	<h1 class="oml float-l"><a href="<%= site_url %>/index.html">Kelly Hilliard</a></h1>
 	<nav class="omr float-r">
-		<ul>
-			<li class="<%- current.source == 'work' ? 'active nav-li' : 'nav-li' %>"><a href="<%= site_url %>/work.html">Work</a></li>
-			<li class="<%- current.source == 'contact' ? 'active nav-li' : 'nav-li' %>"><a href="<%= site_url %>/contact.html">Contact</a></li>
+		<ul itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="<%- current.source == 'work' ? 'active nav-li' : 'nav-li' %>">
+				<a href="<%= site_url %>/work.html" itemprop="item">
+					<span itemprop="name">Work</span>
+				</a>
+			</li>
+			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="<%- current.source == 'contact' ? 'active nav-li' : 'nav-li' %>">
+				<a href="<%= site_url %>/contact.html" itemprop="item">
+					<span itemprop="name">Contact</span>
+				</a>
+			</li>
 		</ul>
 	</nav>
 </header>

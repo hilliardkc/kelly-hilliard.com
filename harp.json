@@ -2,7 +2,7 @@
 	"globals" : {
 		"title": "Kelly Hilliard's Website",
 		"description": "A place to learn a little about me.",
-		"site_url": "http://www.kelly-hilliard.com"
+		"site_url": "http://localhost:9000"
 	},
 	"_comment" : {
 		"site_url": {

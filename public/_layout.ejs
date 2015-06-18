@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/WebSite">
     <head>
         <title><%- title %></title>
 
@@ -7,6 +7,16 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+
+        <meta itemprop="url" content="http://www.kelly-hilliard.com">
+        <meta itemprop="sameAs" content="http://www.linkedin.com/in/kellyhilliard">
+        <meta itemprop="sameAs" content="https://instagram.com/kellyinator/">
+        <meta itemprop="sameAs" content="https://www.flickr.com/photos/kellyhilliard/">
+        <meta itemprop="name" content="Kelly Hilliard">
+        <meta itemprop="about" content="Hello! My name is Kelly and I am a Front End Developer &amp; Designer">
+        <meta itemprop="copyrightHolder" content="Kelly Hilliard">
+        <meta itemprop="copyrightYear" content="2015">
+        <meta itemprop="keywords" content="front end developer, designer, ui/ux">
 
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<%= site_url %>/favicons/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= site_url %>/favicons/apple-touch-icon-114x114.png" />
@@ -43,10 +53,22 @@
           ga('send', 'pageview');
 
         </script>
-        
+
     </head>
     
-    <body>
+    <body itemscope itemtype="http://schema.org/WebPage">
         <%- yield %>
+
+        <meta itemprop="name" content="Kelly Hilliard">
+        <meta itemprop="about" content="Hello! My name is Kelly and I am a Front End Developer &amp; Designer">
+        <meta itemprop="copyrightHolder" content="Kelly Hilliard">
+        <meta itemprop="copyrightYear" content="2015">
+        <meta itemprop="keywords" content="front end developer, designer, ui/ux">
+        <% if(current.source == "index") { %>
+        <meta itemprop="url" content="http://www.kelly-hilliard.com">
+        <% } else { %>
+        <meta itemprop="url" content="http://www.kelly-hilliard.com/<%= current.source %>.html">
+        <% } %>
+        
     </body>
 </html>
