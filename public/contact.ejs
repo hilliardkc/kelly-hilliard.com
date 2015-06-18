@@ -1,0 +1,18 @@
+<div class="flex-wrapper contact">
+	<%- partial("_partials/_header") %>
+	<div class="flex">
+		<%- partial("_partials/_page-title") %>
+		<form action="//formspree.io/hilliardkc@gmail.com" method="POST" class="contact-form">
+			<label for="contact-name" class="omr oml">Your Name:</label>
+		   		<input type="text" name="name" id="contact-name" placeholder="So I know what to call you" />
+		   	<label for="contact-email" class="omr oml">Your Email:</label> 
+		    	<input type="email" name="_replyto" id="contact-name" placeholder="So I can get back to you">
+		    <label for="contact-message" class="omr oml">Your Message:</label>
+		    	<textarea name="message" id="contact-message" placeholder="What did you want to say?" required="true"></textarea>
+		    <input type="text" name="_gotcha" style="display:none" />
+		    <input type="hidden" name="_next" value="/thanks" />
+		    <input type="submit" value="Send Message">
+		</form>
+	</div>
+	<%- partial("_partials/_footer") %>
+</div>

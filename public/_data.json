@@ -1,0 +1,17 @@
+{
+	"work" : {
+		"title": "Kelly Hilliard's Work",
+		"description": "A sample of my recent work.",
+		"pagetitle": "My Work"
+	},
+	"contact" : {
+		"title": "Contact Kelly Hilliard",
+		"description": "Get in touch with me!",
+		"pagetitle": "Contact Me"
+	},
+	"thanks" : {
+		"title": "Contact Kelly Hilliard",
+		"description": "Get in touch with me!",
+		"pagetitle": "Contact Me"
+	}
+}
