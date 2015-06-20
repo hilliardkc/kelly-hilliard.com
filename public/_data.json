@@ -13,5 +13,13 @@
 		"title": "Contact Kelly Hilliard",
 		"description": "Get in touch with me!",
 		"pagetitle": "Contact Me"
+	},
+	"404": {
+		"title": "404",
+		"description": "Page not found.",
+		"pagetitle": "404!"
+	},
+	"sitemap": {
+	    "layout": false
 	}
 }
