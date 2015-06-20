@@ -19,6 +19,16 @@
         <meta itemprop="copyrightYear" content="2015">
         <meta itemprop="keywords" content="front end developer, designer, ui/ux">
 
+        <meta property="og:title" content="<%- title %>" />
+        <meta property="og:type" content="website" />
+        <% if(current.source == "index") { %>
+        <meta  property="og:url" content="http://www.kelly-hilliard.com">
+        <% } else { %>
+        <meta  property="og:url" content="http://www.kelly-hilliard.com/<%= current.source %>.html">
+        <% } %>
+        <meta property="og:image" content="http://www.kelly-hilliard.com/images/logo-600.jpg" />
+        <meta property="og:description" content="<%- description %>">
+
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<%= site_url %>/favicons/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= site_url %>/favicons/apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= site_url %>/favicons/apple-touch-icon-72x72.png" />
@@ -39,7 +49,8 @@
         <meta name="msapplication-wide310x150logo" content="<%= site_url %>/favicons/mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="<%= site_url %>/favicons/mstile-310x310.png" />
 
-        <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css' async>
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
         
         <script>
         // Picture element HTML5 shiv
@@ -47,7 +58,7 @@
         </script>
         <script src="<%= site_url %>/js/picturefill.min.js" async></script>
 
-        <link rel="stylesheet" href="<%= site_url %>/styles/main.css" async>
+        <link rel="stylesheet" href="<%= site_url %>/styles/main.css">
 
         <!-- Google Analytics -->
         <script>
