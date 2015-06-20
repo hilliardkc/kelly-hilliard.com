@@ -2,13 +2,14 @@
 	"globals" : {
 		"title": "Kelly Hilliard - Front End Developer and Designer",
 		"description": "My personal portfolio website, sharing a little bit about me and my work. ",
-		"site_url": "http://192.168.0.12:9000"
+		"site_url": "http://www.kelly-hilliard.com"
 	},
 	"_comment" : {
 		"site_url": {
 			"1": "http://localhost:9000",
 			"2": "file:///Users/hilliardkc/Documents/kelly-hilliard_website/site/www",
 			"3": "http://www.kelly-hilliard.com",
+			"4": "http://192.168.0.12:9000",
 			"change": "above in globals.site_url, might need to change in home.less, contact.less and type.less"
 		}
 	}

@@ -30,8 +30,31 @@ footer {
 	a {
 		border-bottom: 1px dashed @b-100;
 	}
+	.omr {
+		text-align: right;
+	}
 }
-
+.social-icon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin: 0 5px;
+	border: none;
+	background: no-repeat center center;
+	.background(contain);
+}
+#social-linkedin {
+	background-image: url(http://www.kelly-hilliard.com/images/linkedin-80.png);
+}
+#social-instagram {
+	background-image: url(http://www.kelly-hilliard.com/images/instagram-80.png);
+}
+#social-flickr {
+	background-image: url(http://www.kelly-hilliard.com/images/flickr-80.png);
+}
+.social-icon:last-of-type{
+	margin-right: 0;
+}
 @media(max-width: 650px) {
 	header {
 		h1 {
@@ -54,8 +77,8 @@ footer {
 		.oml,
 		.omr {
 			margin: 0;
+			text-align: center;
 		}
-		text-align: center;
 	}
 }
 @media(max-width: 400px) {

@@ -4,10 +4,7 @@
 
 .contact {
 	background: url(http://www.kelly-hilliard.com/images/contact_bg_2400.jpg) no-repeat bottom center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	.background(cover);
 	header {
 		background-color: transparent;
 	}
@@ -16,6 +13,11 @@
 	}
 	.page-title {
 		color: @b-100;
+	}
+}
+@media(max-width: 800px) {
+	.contact {
+		background-image: url(http://www.kelly-hilliard.com/images/contact_bg_1600.jpg);
 	}
 }
 .contact-p {
